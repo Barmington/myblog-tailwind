@@ -1,4 +1,4 @@
-import Comments from '@/app/Components/Comments.jsx';
+import Comments from '@/Components/Comments.jsx';
 import { db } from '@/utils/db'; // Ensure proper import of your database utility
 
 export default async function BlogPostPage({ params }) {
