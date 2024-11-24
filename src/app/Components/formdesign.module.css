@@ -1,0 +1,13 @@
+.formLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLayout > input,
+.formLayout textarea {
+  margin-bottom: 15px;
+  width: 91.7%;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
