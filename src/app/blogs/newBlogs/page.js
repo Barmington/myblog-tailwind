@@ -1,4 +1,4 @@
-import Newblog from '@/Components/Newblog.jsx';
+import Newblog from '@/app/Components/Newblog.jsx';
 export default function AddBlog() {
   return (
     <div className="m-20">
