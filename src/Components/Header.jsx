@@ -1,16 +1,20 @@
+import Link from 'next/link';
+
 export default function Header() {
   return (
-    <div>
-      <div>
-        <a>Home</a>
+    <nav>
+      <div className="flex gap-7 justify-end">
+        <Link href="/">Home</Link>
+
+        <Link href="/about">About Us</Link>
+
+        <Link href="/contact"> Contact Us</Link>
+
+        <button className="border rounded-lg border-white md:text-black hover:text-black hover:bg-lime-300 px-5">
+          {' '}
+          SignUp/LogIn
+        </button>
       </div>
-      <div>
-        <a>About Us</a>
-      </div>
-      <div>
-        <a>Profile</a>
-      </div>
-      <button>Sign Up/LogIn</button>
-    </div>
+    </nav>
   );
 }
