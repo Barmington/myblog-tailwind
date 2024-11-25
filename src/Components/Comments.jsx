@@ -30,15 +30,21 @@ export default function AddComment() {
 
   return (
     <div>
-      <h3>Comment on blog</h3>
-      <form action={handleAddComment}>
+      <h3 className="mt-5">Comment on blog</h3>
+      <form
+        className="border border-black bg-slate-200 rounded-md p-6"
+        action={handleAddComment}
+      >
         <FormDesign>
-          <label>Username</label>
-          <input name="username" placeholder="username" />
+          <div className="flex ">
+            <label>Username: </label>
+            <input name="username" placeholder="Username" />
+
+            <label>Blog_ID: </label>
+            <input name="blog_id" placeholder="BlogID" />
+          </div>
           <label>Comment</label>
           <textarea name="content" placeholder="Comment"></textarea>
-          <label>Blog_id</label>
-          <input name="blog_id" placeholder="blog_id" />
         </FormDesign>
         <button className="border rounded-md bg-black border-black md:text-white hover:text-black hover:bg-lime-300 px-5">
           Add comment

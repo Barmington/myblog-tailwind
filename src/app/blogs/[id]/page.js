@@ -26,26 +26,33 @@ export default async function BlogPostPage({ params }) {
 
     return (
       <div className="w-11/12 ml-10 flex flex-col justify-center items-start">
-        <div className="w-11/12">
-          <h1>{post.title}</h1>
-          <p>
-            By <strong>{post.username}</strong>
-          </p>
-          <p>{post.content}</p>
+        <div className="w-auto">
+          <div className="mt-6">
+            <h1>{post.title}</h1>
+            <p>
+              By{' '}
+              <strong>
+                <em>{post.username}</em>
+              </strong>
+            </p>
+            <p>{post.content}</p>
+          </div>
         </div>
-        <div className="comment">
-          <Comments className="" />
+        <div>
+          <Comments />
           {post.comments.length ? (
             <ul>
               {post.comments.map(comment => (
                 <li key={comment.id}>
-                  <p>
-                    <b>
-                      {' '}
-                      <em>{comment.username} - </em>
-                    </b>{' '}
-                    {comment.content}
-                  </p>
+                  <div className="border rounded-md bg-slate-100 mt-6">
+                    <p>
+                      <b>
+                        {' '}
+                        <em>{comment.username} - </em>
+                      </b>{' '}
+                      {comment.content}
+                    </p>
+                  </div>
                 </li>
               ))}
             </ul>

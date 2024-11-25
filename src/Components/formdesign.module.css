@@ -3,11 +3,23 @@
   flex-direction: column;
 }
 
-.formLayout > input,
 .formLayout textarea {
   margin-bottom: 15px;
-  width: 91.7%;
+  width: 45vw;
   align-items: center;
   border: 1px solid gray;
   border-radius: 6px;
+}
+.formLayout input {
+  margin-bottom: 15px;
+  width: 200px;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-left: 8px;
+}
+
+.formLayout div {
+  margin-top: 20px;
 }

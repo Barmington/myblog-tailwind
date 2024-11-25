@@ -16,7 +16,7 @@ export default async function BlogsPage({ searchParams }) {
       <Link href="/blogs?sort=asc">Sort ascending</Link>
       <Link href="/blogs?sort=desc">Sort descending</Link>
 
-      <div className="w-8/12">
+      <div className="w-11/12">
         {blogs.length ? (
           <ul>
             {blogs.map(blog => (
